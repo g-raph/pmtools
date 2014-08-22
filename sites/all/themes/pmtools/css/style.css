@@ -1,0 +1,147 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.transit {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.group-left {
+  width: 49%;
+  float: left;
+  margin-bottom: 20px;
+}
+.group-right {
+  width: 49%;
+  float: right;
+  margin-bottom: 20px;
+}
+a.logo img {
+  width: 34px;
+}
+.hl {
+  margin: 0 0 30px;
+}
+.highlightbox > * {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+form#search-block-form {
+  float: right;
+  width: 300px;
+  margin: 3px 0 0;
+}
+#admin-menu {
+  left: -140px;
+  width: 140px;
+  height: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow: visible;
+}
+#admin-menu:hover {
+  left: 0;
+}
+#admin-menu:after {
+  content: "";
+  position: absolute;
+  top: 106px;
+  right: -29px;
+  width: 30px;
+  height: 30px;
+  background: url(../img/icon-settings.svg) no-repeat 3px center;
+  background-color: #000;
+  background-size: 20px;
+  border-radius: 0 50% 50% 0;
+  padding: 0;
+  z-index: 99;
+}
+#admin-menu ul#admin-menu-menu > li {
+  display: inline-block;
+  width: 100%;
+}
+#admin-menu ul#admin-menu-menu > li > ul {
+  margin: -20px 0 0 80px;
+}
+.frontmenu .frontmenu-inner .frontmenu-block {
+  display: inline-block;
+  width: 31%;
+  padding: 20px 2%;
+  vertical-align: top;
+  height: 330px;
+  margin: 0 0 5px;
+}
+.frontmenu .frontmenu-inner .frontmenu-block > * {
+  display: block;
+  text-align: center;
+}
+.frontmenu .frontmenu-inner .frontmenu-block h3 {
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.frontmenu .frontmenu-inner .frontmenu-block img {
+  margin: 20px auto;
+  width: 40%;
+  opacity: 0.5;
+}
+.frontmenu .frontmenu-inner .frontmenu-block img:hover {
+  opacity: 1;
+}
+.frontmenu .frontmenu-inner .frontmenu-block .frontmenu-links > a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+  width: 20%;
+}
+.frontmenu .frontmenu-inner .frontmenu-block .frontmenu-links > a > img {
+  width: 75%;
+  margin: 0;
+  display: inline-block;
+}
+.view-projects .views-row .group-left {
+  margin-bottom: 0;
+}
+.view-projects .views-row .group-left .field-name-field-project-image img {
+  border: 5px solid #fff;
+  border-radius: 4px;
+  margin: 0;
+}
+.view-projects .views-row .group-right {
+  margin-bottom: 0;
+}
+.view-projects .views-row .group-right .group-right-top {
+  font-size: 12px;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  border-bottom: 1px dashed #ddd;
+}
+.view-projects .views-row .group-right .group-right-top > * {
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 20px 0 0;
+  padding: 0 20px 0 0;
+  border-right: 1px solid #ddd;
+}
+.view-payments .views-table tbody tr .views-field-field-payment-status a[href="/paymentstatus/betaald"] {
+  color: green;
+}
+.view-payments .views-table tbody tr .views-field-field-payment-status a[href="/paymentstatus/te-betalen"] {
+  color: red;
+}
+.view-payments .views-table tbody tr .views-field-field-payment-status a[href="/paymentstatus/wachten"] {
+  color: orange;
+}
