@@ -26,6 +26,14 @@ regions[page_bottom]    = 'Page bottom'
 
 stylesheets[all][] = css/style.css
 
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/vue.min.js
+scripts[] = js/jquery-ui.js
+scripts[] = js/custom.js
+
 
 ; For information on choosing the desired method, please read the Drupal
 ; Bootstrap sub-theme "how-to" documentation:
@@ -53,7 +61,7 @@ stylesheets[all][] = css/style.css
 ; scripts[] = 'bootstrap/js/transition.js'
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
-; settings[bootstrap_cdn] = ''
+settings[bootstrap_cdn] = ''
 
 
 ; ;-------------------------

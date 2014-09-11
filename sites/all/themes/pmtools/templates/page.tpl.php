@@ -161,6 +161,25 @@
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
 
+    <div id="github">
+      <input type="radio" id="master" name="branch" v-model="branch" value="master">
+      <label for="master">master</label>
+      <br>
+      <input type="radio" id="dev" name="branch" v-model="branch" value="dev">
+      <label for="dev">dev</label>
+      <ul>
+          <li v-repeat="commits">
+              <a href="{{html_url}}" target="_blank" class="commit">
+                  {{sha.slice(0, 7)}}
+              </a>
+              - <span class="message">{{commit.message | truncate}}</span>
+              <br>
+              by <span class="author">{{commit.author.name}}</span>
+              at <span class="date">{{commit.author.date | formatDate}}</span>
+          </li>
+      </ul>
+    </div>
+
   </div>
 </div>
 <footer class="footer container">
