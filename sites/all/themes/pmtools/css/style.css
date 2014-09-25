@@ -246,7 +246,7 @@ body.admin-menu .navbar-fixed-top {
   background: none;
   background-image: none;
   position: relative;
-  margin: 20px 0 0;
+  margin: 40px 0 0;
 }
 .node-type-projects #tabbox > ul {
   background: none;
@@ -271,6 +271,9 @@ body.admin-menu .navbar-fixed-top {
   border: 0;
   background: none;
   background-image: none;
+}
+.node-type-projects #tabbox > #block-views-tickets-block:before {
+  display: none;
 }
 .node-type-projects #tabbox > #block-views-tickets-block select {
   height: 26px;
@@ -335,7 +338,6 @@ body.admin-menu .navbar-fixed-top {
   color: #aaa;
 }
 .node-type-projects #tabbox > #block-views-kanban .kanbanblock .view-tickets .views-row {
-  background: #fff;
   margin: 0 0 10px;
   padding: 5px;
   min-height: 20px;
@@ -356,12 +358,27 @@ body.admin-menu .navbar-fixed-top {
 }
 .node-type-projects #tabbox > #block-views-kanban .kanbanblock .view-tickets .views-row .views-field-body {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 13px;
   font-style: italic;
-  color: #aaa;
   padding: 5px 0 10px;
   margin-bottom: 10px;
   border-bottom: 1px dashed #ddd;
+}
+.node-type-projects #tabbox > #block-views-kanban .kanbanblock .view-tickets .views-row .views-field-field-tick-priority-editable,
+.node-type-projects #tabbox > #block-views-kanban .kanbanblock .view-tickets .views-row .views-field-field-tick-assignee-editable,
+.node-type-projects #tabbox > #block-views-kanban .kanbanblock .view-tickets .views-row .views-field-field-tick-type-editable,
+.node-type-projects #tabbox > #block-views-kanban .kanbanblock .view-tickets .views-row .views-field-nid {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  font-size: 14px;
+  color: #bbb;
+}
+.node-type-projects #tabbox > #block-views-kanban .kanbanblock .view-tickets .views-row .views-field-field-tick-priority-editable a,
+.node-type-projects #tabbox > #block-views-kanban .kanbanblock .view-tickets .views-row .views-field-field-tick-assignee-editable a,
+.node-type-projects #tabbox > #block-views-kanban .kanbanblock .view-tickets .views-row .views-field-field-tick-type-editable a,
+.node-type-projects #tabbox > #block-views-kanban .kanbanblock .view-tickets .views-row .views-field-nid a {
+  color: #bbb;
 }
 .page-tickets .region-content .view-tickets table.views-table {
   margin-bottom: 40px;

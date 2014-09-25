@@ -161,7 +161,7 @@
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
 
-    <div id="github">
+    <!-- <div id="github">
       <input type="radio" id="master" name="branch" v-model="branch" value="master">
       <label for="master">master</label>
       <br>
@@ -178,7 +178,7 @@
               at <span class="date">{{commit.author.date | formatDate}}</span>
           </li>
       </ul>
-    </div>
+    </div> -->
 
   </div>
 </div>

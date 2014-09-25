@@ -32,6 +32,7 @@ stylesheets[all][] = css/style.css
 
 scripts[] = js/vue.min.js
 scripts[] = js/jquery-ui.js
+scripts[] = js/jquery.loadTemplate.js
 scripts[] = js/custom.js
 
 
